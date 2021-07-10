@@ -15,7 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 app.use(logger('dev'))
-
+app.use(require('./controller/html-routes'))
+app.use(require('./controller/api-routes'))
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
