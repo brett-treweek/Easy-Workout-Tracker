@@ -20,11 +20,6 @@ app.use(logger('dev'))
 app.use(require('./controller/html-routes'))
 app.use(require('./controller/api-routes'))
 
-db.Workout
-    .aggregate([
-      { $addFields: { totalDuration: { $sum: "$exercises.duration" } } },
-    ])
-
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
