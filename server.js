@@ -14,7 +14,9 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
+app.use(logger('dev'))
 
-app.listen(3000, () => {
-  console.log("App running on port 3000!");
+
+app.listen(PORT, () => {
+  console.log(`App running on port ${PORT}!`);
 });
