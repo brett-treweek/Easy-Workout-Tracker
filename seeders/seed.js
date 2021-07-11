@@ -1,11 +1,8 @@
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 const db = require('../models');
+const connectDB = require('../connectionDB')
+connectDB()
 
-mongoose.connect('mongodb://localhost/workout', {
-  useNewUrlParser: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true,
-});
 
 const workoutSeed = [
   {
