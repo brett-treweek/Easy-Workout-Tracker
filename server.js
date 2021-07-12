@@ -1,6 +1,5 @@
 const express = require("express");
 const logger = require("morgan");
-require('dotenv').config()
 const db = require("./models");
 const connectDB = require('./connectionDB')
 
