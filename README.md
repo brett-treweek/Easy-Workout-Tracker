@@ -91,6 +91,7 @@ There are no tests at present.
 - mongoose
 - Express
 - morgan
+- dotenv
 - MVC
 - Heroku
 ---
