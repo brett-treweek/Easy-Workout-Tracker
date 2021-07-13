@@ -1,7 +1,7 @@
 require('dotenv').config();
 const mongoose = require("mongoose");
 
-
+// Connection to mongoDB Atlas
 const connectDB = async () => {
   await mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,

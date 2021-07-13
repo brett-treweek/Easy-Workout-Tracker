@@ -9,7 +9,11 @@
 ![AUR license](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)
 
 ## Description
+The Easy Workout Tracker is a Web App which allows users to view, create and track daily workouts, allowing them to reach their fitness goals more quickly.  
 
+It uses HTML, CSS, JavaScript and Node.js. Express is used to handle routes in the backend and it connects to a MongoDB Atlas  cloud Database. Mongoose is used as the ORM and Model View Controller has been implemented for the apps' architectural structure.  
+
+Users will see their last workout on the home page. They can then create new workouts and record various details including date, type, duration, weight, sets and reps. They can also continue a workout and are able to see a graphical representation of their progress in the dashboard.
 
 ---
 ## Table of Contents
